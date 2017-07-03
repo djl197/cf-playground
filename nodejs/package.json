@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "author": "Anand Mani Sankar",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  },
   "license": "ISC",
   "dependencies": {
     "express": "^4.12.3",
@@ -12,4 +15,3 @@
     "redis": "^0.12.1"
   }
 }
-
