@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "author": "Anand Mani Sankar",
+  "author": "Daniel Laird",
   "scripts": {
     "test": "./node_modules/.bin/mocha --reporter spec"
   },
