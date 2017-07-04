@@ -1,13 +1,13 @@
 const allVars = process.env;
-const allUrls = Object.keys(allVars)
-    .filter(envVarKey => envVarKey.startsWith('CF_URL_'))
-    .reduce((obj, envVarKey) => {
-        obj[envVarKey] = allVars[envVarKey];
-        return obj;
-    }, {});
-
-console.log(allUrls)
-
+var url = process.env.CF_URL_NGINX
+//#const allUrls = Object.keys(allVars)
+//    .filter(envVarKey => envVarKey.startsWith('CF_URL_'))
+//    .reduce((obj, envVarKey) => {
+//        obj[envVarKey] = allVars[envVarKey];
+//        return obj;
+//    }, {});
+//
+console.log(url)
 var urlExists = require('url-exists')
 var assert = require("assert");
 
