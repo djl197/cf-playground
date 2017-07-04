@@ -15,13 +15,13 @@ describe('Dummy Test', function(){
     it('should pass', function(){
       urlExists(url, function(err, exists) {
         console.log(exists); // true 
-        asset.ok(exists, "URL does exist")
+        assert.ok(exists, "URL does exist")
       });
     });
     it('should fail', function(){
       urlExists('bob', function(err, exists) {
         console.log(exists); // false 
-        asset.ok(exists, "URL does exist")
+        assert.ok(exists, "URL does NOT exist")
       });
     });
 });
