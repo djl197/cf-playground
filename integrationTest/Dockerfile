@@ -8,7 +8,7 @@ MAINTAINER Daniel Laird
 RUN apt-get update && \
     apt-get -y install curl && \
     curl -sL https://deb.nodesource.com/setup | sudo bash - && \
-    apt-get -y install python build-essential nodejs
+    apt-get -y install python build-essential nodejs wget
 
 # Install nodemon
 RUN npm install -g nodemon
