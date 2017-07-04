@@ -14,12 +14,14 @@ var assert = require("assert");
 describe('Dummy Test', function(){
     it('should pass', function(){
       urlExists('https://www.google.com', function(err, exists) {
-      console.log(exists); // true 
-      asset.ok(exists, "URL does exist")
+        console.log(exists); // true 
+        asset.ok(exists, "URL does exist")
+      });
     });
     it('should fail', function(){
       urlExists('https://www.google.com', function(err, exists) {
-      console.log(exists); // true 
-      asset.ok(exists, "URL does exist")
+        console.log(exists); // true 
+        asset.ok(exists, "URL does exist")
+      });
     });
 });
